@@ -1,12 +1,16 @@
 import AboutMe from "./components/AboutMe";
+import Header from "./components/Header";
 import HomeScreen from "./components/HomeScreen";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <>
-      <div className="absolute w-screen bg-gray-100 min-h-screen">
+      <div className=" ">
+        <Header />
         <HomeScreen />
         <AboutMe />
+        <Projects />
       </div>
     </>
   );
