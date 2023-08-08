@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const AboutMe = () => {
   return (
-    <div className=" h-screen border-t border-red-950 py-16">
+    <div id="aboutme" className="border border-white h-screen py-16">
       <h2 className=" text-center text-4xl my-14">About Me</h2>
       <div className="flex flex-row gap-5  w-2/3 mx-auto">
         <div className="">

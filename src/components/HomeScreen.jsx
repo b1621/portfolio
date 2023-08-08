@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const HomeScreen = () => {
   return (
-    <div className=" min-h-screen">
+    <div id="home" className=" min-h-screen border border-white">
       <div className="flex flex-row gap-5 my-28 w-2/3 mx-auto">
         <div className=" my-10">
           <h2 className=" text-green-700 text-4xl">Hello,</h2>
