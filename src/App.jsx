@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div div className="relative">
+    <div div className="relative bg bg-slate-950 text-white">
       <Header />
       <HomeScreen />
       <AboutMe />
