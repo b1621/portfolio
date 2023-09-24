@@ -1,8 +1,8 @@
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ id }) => {
   return (
-    <div id="skills" className="border border-white h-screen">
+    <div id={id} className="border border-white h-screen">
       Skills
     </div>
   );

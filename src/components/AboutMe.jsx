@@ -1,11 +1,14 @@
 import React from "react";
 import Button from "./Button";
 
-const AboutMe = () => {
+const AboutMe = ({ id }) => {
   return (
-    <div id="aboutme" className="border border-white h-screen py-16">
+    <div id={id} className=" border-white h-screen py-16">
       <h2 className=" text-center text-4xl my-14">About Me</h2>
-      <div className="flex flex-row gap-5  w-2/3 mx-auto">
+      <div
+        data-aos="fade-right"
+        className="flex flex-row gap-5  w-2/3 mx-auto duration-500"
+      >
         <div className="">
           <img src="./boy.jpg" className=" w-[900px]" alt="" />
         </div>
