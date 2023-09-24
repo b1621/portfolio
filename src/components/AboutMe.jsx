@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const AboutMe = ({ id }) => {
   return (
-    <div id={id} className=" border-white h-screen py-16">
+    <div id={id} className="  h-screen py-16">
       <h2 className=" text-center text-4xl my-14">About Me</h2>
       <div
         data-aos="fade-right"

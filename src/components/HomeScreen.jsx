@@ -4,7 +4,7 @@ import Button from "./Button";
 const HomeScreen = () => {
   return (
     // <div data-aos="fade-up">...</div>
-    <div id="home" className=" min-h-screen  border-white">
+    <div id="home" className=" min-h-screen  ">
       <div
         // data-aos="fade-up"
         className="flex flex-row gap-5 my-28 w-2/3 mx-auto"

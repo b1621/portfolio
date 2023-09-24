@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div div className="relative bg bg-slate-950 text-white">
+    <div div className="relative bg bg-gray-950 text-white">
       <SideBar />
       <div className="border-slate-950 h-1 border "></div>
       {/* <Header /> */}

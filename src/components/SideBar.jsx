@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Element, animateScroll as scroll, scroller } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 const SideBar = () => {
   const [activeLink, setActiveLink] = useState("about");
@@ -64,49 +66,76 @@ const SideBar = () => {
   // };
 
   return (
-    <div className="fixed w-28 border h-full">
+    <div className="fixed w-32 bg-gray-900  h-full">
       <p
         onClick={scrollToTop}
-        className=" text-3xl font-serif -my-1 text-green-700"
+        className=" text-center text-3xl font-serif -my-1 text-green-700"
       >
-        B.0
+        B.0{" "}
+        <span className=" text-lg">
+          <FontAwesomeIcon icon={faHome} />
+        </span>
       </p>
 
-      <ul className="flex flex-col justify-center h-full px-4">
+      <ul className="flex flex-col justify-center h-full px-4 gap-2">
         {/* <a href="#about">
           <li>About</li>
         </a> */}
         <Link
           // className=" active:text-green-700"
-          className={activeLink === "about" ? "text-green-700" : ""}
+          className={` cursor-pointer hover:text-green-800 ${
+            activeLink === "about" ? "text-green-700" : ""
+          }`}
           to="about"
           smooth={true}
           duration={1500}
         >
+          <span className={activeLink === "about" ? " inline px-1" : "hidden"}>
+            --
+          </span>
           About
         </Link>
         <Link
           to="skills"
           smooth={true}
           duration={1500}
-          className={activeLink === "skills" ? "text-green-700" : ""}
+          className={` cursor-pointer hover:text-green-800 ${
+            activeLink === "skills" ? "text-green-700" : ""
+          }`}
         >
+          <span className={activeLink === "skills" ? " inline px-1" : "hidden"}>
+            --
+          </span>
           Skills
         </Link>
         <Link
           to="projects"
           smooth={true}
           duration={1500}
-          className={activeLink === "projects" ? "text-green-700" : ""}
+          className={` cursor-pointer hover:text-green-800 ${
+            activeLink === "projects" ? "text-green-700" : ""
+          }`}
         >
+          <span
+            className={activeLink === "projects" ? " inline px-1" : "hidden"}
+          >
+            --
+          </span>
           Projects
         </Link>
         <Link
           to="contact"
           smooth={true}
           duration={1500}
-          className={activeLink === "contact" ? "text-green-700" : ""}
+          className={` cursor-pointer hover:text-green-800 ${
+            activeLink === "contact" ? "text-green-700" : ""
+          }`}
         >
+          <span
+            className={activeLink === "contact" ? " inline px-1" : "hidden"}
+          >
+            --
+          </span>
           Contact
         </Link>
         {/* <a href="#skills">
@@ -119,6 +148,10 @@ const SideBar = () => {
           <li>Contact</li>
         </a> */}
         {/* <button onClick={scrollToTop}>Scroll to Top</button> */}
+        <div className=" h-48">
+          {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
+          {/* <FontAwesomeIcon icon={faGithub} /> */}
+        </div>
       </ul>
     </div>
   );

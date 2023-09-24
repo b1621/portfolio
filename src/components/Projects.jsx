@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = ({ id }) => {
   return (
-    <div id={id} className=" h-screen border border-white">
+    <div id={id} className=" h-screen ">
       <div className="py-20">
         <h2 className="text-center text-4xl mb-10">My Works</h2>
         <ul className=" w-fit mx-auto flex gap-14 my-5">
