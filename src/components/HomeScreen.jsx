@@ -13,6 +13,10 @@ const HomeScreen = () => {
           <h2 className=" text-green-700 text-4xl">Hello,</h2>
           <h3 className="my-5 text-6xl">I'm Devid B.</h3>
           <h4 className=" text-3xl">Software Developer & Pentration Tester</h4>
+          <div className="border flex space-x-5 my-5">
+            <img className="h-7" src="github.png" alt="" />
+            <img className="h-7" src="linkedin.png" alt="" />
+          </div>
           <div className="my-5 w-fit">
             <Button> About Me </Button>
           </div>

@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 const SideBar = () => {
-  const [activeLink, setActiveLink] = useState("about");
+  const [activeLink, setActiveLink] = useState("");
 
   // Function to handle scroll events
   const handleScroll = () => {
     // Get the scroll position
     const scrollY = window.scrollY;
+    // console.log("scrolly Y = ", scrollY);
 
     // Define the positions of your sections
     const homePosition = 0;
@@ -48,7 +49,7 @@ const SideBar = () => {
     scroll.scrollToTop();
   };
 
-  console.log("the current page is ", activeLink);
+  // console.log("the current page is ", activeLink);
 
   // const scrollToAbout = () => {
   //   scroller.scrollTo("about", {
@@ -67,15 +68,19 @@ const SideBar = () => {
 
   return (
     <div className="fixed w-32 bg-gray-900  h-full">
-      <p
+      {/* <p
         onClick={scrollToTop}
-        className=" text-center text-3xl font-serif -my-1 text-green-700"
+        className=" text-center text-4xl font-thin font-serif my-2 text-green-700"
       >
-        B.0{" "}
-        <span className=" text-lg">
-          <FontAwesomeIcon icon={faHome} />
-        </span>
-      </p>
+        B0
+        
+      </p> */}
+      <img
+        onClick={scrollToTop}
+        className=" cursor-pointer h-14 mt-4 w-20 shadow-2xl  rounded-full  shadow-green-700 mx-auto"
+        src="logo-no-background.png"
+        alt=""
+      />
 
       <ul className="flex flex-col justify-center h-full px-4 gap-2">
         {/* <a href="#about">
@@ -138,6 +143,10 @@ const SideBar = () => {
           </span>
           Contact
         </Link>
+        <div className="border flex space-x-5 my-5">
+          <img className="h-7" src="github.png" alt="" />
+          <img className="h-7" src="linkedin.png" alt="" />
+        </div>
         {/* <a href="#skills">
           <li>Skills</li>
         </a>
