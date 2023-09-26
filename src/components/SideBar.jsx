@@ -70,6 +70,8 @@ const SideBar = () => {
   //     console.log("hello world");
   //   };
 
+  // https://www.devwares.com/blog/how-to-implement-dark-mode-in-tailwind-css/
+
   return (
     <div className="fixed w-32   h-full">
       {/* bg-gray-900*/}
