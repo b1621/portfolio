@@ -65,10 +65,10 @@ const SideBar = () => {
   //     smooth: "easeInOutQuart",
   //   });
   // };
-
-  const toggleDarkMode = () => {
-    console.log("hello world");
-  };
+  //  const [theme, setTheme] = useState(localStorage.)
+  //   const toggleDarkMode = () => {
+  //     console.log("hello world");
+  //   };
 
   return (
     <div className="fixed w-32   h-full">
