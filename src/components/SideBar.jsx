@@ -66,28 +66,22 @@ const SideBar = () => {
   //   });
   // };
 
+  const toggleDarkMode = () => {
+    console.log("hello world");
+  };
+
   return (
-    <div className="fixed w-32 bg-gray-900  h-full">
-      {/* <p
-        onClick={scrollToTop}
-        className=" text-center text-4xl font-thin font-serif my-2 text-green-700"
-      >
-        B0
-        
-      </p> */}
+    <div className="fixed w-32   h-full">
+      {/* bg-gray-900*/}
       <img
         onClick={scrollToTop}
         className=" cursor-pointer h-14 mt-4 w-20 shadow-2xl  rounded-full  shadow-green-700 mx-auto"
         src="logo-no-background.png"
         alt=""
       />
-
       <ul className="flex flex-col justify-center h-full px-4 gap-2">
-        {/* <a href="#about">
-          <li>About</li>
-        </a> */}
+        <button onClick={toggleDarkMode}>click</button>
         <Link
-          // className=" active:text-green-700"
           className={` cursor-pointer hover:text-green-800 ${
             activeLink === "about" ? "text-green-700" : ""
           }`}
@@ -145,7 +139,7 @@ const SideBar = () => {
         </Link>
         <div className="border flex space-x-5 my-5">
           <img className="h-7" src="github.png" alt="" />
-          <img className="h-7" src="linkedin.png" alt="" />
+          <img className="h-7" src="linkedin (1).png" alt="" />
         </div>
         {/* <a href="#skills">
           <li>Skills</li>

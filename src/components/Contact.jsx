@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 const Contact = ({ id }) => {
   return (
     <div id={id} className="h-screen w-2/3 mx-auto pb-10">
-      <h2 className=" text-center text-4xl  py-14">Contact</h2>
+      <h2 className=" text-center text-4xl pt-10 pb-14">Contact</h2>
       <div className="flex justify-around">
         <div>
           <h3>Phone</h3>
