@@ -65,10 +65,10 @@ const SideBar = () => {
   //     smooth: "easeInOutQuart",
   //   });
   // };
-  //  const [theme, setTheme] = useState(localStorage.)
-  //   const toggleDarkMode = () => {
-  //     console.log("hello world");
-  //   };
+  const [theme, setTheme] = useState(localStorage.theme);
+  const toggleDarkMode = () => {
+    console.log("hello world");
+  };
 
   // https://www.devwares.com/blog/how-to-implement-dark-mode-in-tailwind-css/
 

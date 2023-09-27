@@ -6,7 +6,7 @@ const ContactForm = () => {
     // send email using Emailjs
     // https://dev.to/ebereplenty/contact-form-with-emailjs-react-581c
     <div>
-      <form action="" className=" my-10 w-1/2 mx-auto space-y-4">
+      <form action="" className="pl-28 space-y-4">
         <div className="">
           <label htmlFor="name">Name</label>
           <input
