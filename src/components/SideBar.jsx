@@ -68,6 +68,8 @@ const SideBar = () => {
   const [theme, setTheme] = useState(localStorage.theme);
   const toggleDarkMode = () => {
     console.log("hello world");
+    console.log("theme", theme);
+    console.log(localStorage);
   };
 
   // https://www.devwares.com/blog/how-to-implement-dark-mode-in-tailwind-css/
@@ -81,7 +83,7 @@ const SideBar = () => {
         src="logo-no-background.png"
         alt=""
       />
-      <ul className="flex flex-col justify-center h-full px-4 gap-2">
+      <ul className="flex flex-col justify-center h-full px-4 gap-4">
         <button onClick={toggleDarkMode}>click</button>
         <Link
           className={` cursor-pointer hover:text-green-800 ${
@@ -92,7 +94,7 @@ const SideBar = () => {
           duration={1500}
         >
           <span className={activeLink === "about" ? " inline px-1" : "hidden"}>
-            --
+            {"-->"}
           </span>
           About
         </Link>
@@ -105,7 +107,7 @@ const SideBar = () => {
           }`}
         >
           <span className={activeLink === "skills" ? " inline px-1" : "hidden"}>
-            --
+            {"-->"}
           </span>
           Skills
         </Link>
@@ -120,7 +122,7 @@ const SideBar = () => {
           <span
             className={activeLink === "projects" ? " inline px-1" : "hidden"}
           >
-            --
+            {"-->"}
           </span>
           Projects
         </Link>
@@ -135,7 +137,7 @@ const SideBar = () => {
           <span
             className={activeLink === "contact" ? " inline px-1" : "hidden"}
           >
-            --
+            {"-->"}
           </span>
           Contact
         </Link>
