@@ -5,10 +5,13 @@ import Header from "./components/Header";
 import HomeScreen from "./components/HomeScreen";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import SideBar from "./components/SideBar";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -22,6 +25,7 @@ function App() {
 
   return (
     <div div className="relative bg bg-gray-950 text-white">
+      <ToastContainer />
       <SideBar />
       <div className="border-slate-950 h-1 border "></div>
       {/* <Header /> */}
